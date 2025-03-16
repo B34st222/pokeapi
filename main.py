@@ -7,11 +7,12 @@ def get_pokemon_info(name):
     response = requests.get(url)
     if response.status_code == 200:
         data = response.json()
-        print(f"Pokemon name: {data['name']}")
-        print(f"Pokemon id: {data['id']}")
-        print(f"Pokemon height: {data['height']}")
-        print(f"Pokemon weight: {data['weight']}")
-        print(f"Pokemon abilities: {data['abilities']}")
+        print
+        # print(f"Pokemon name: {data['name']}")
+        # print(f"Pokemon id: {data['id']}")
+        # print(f"Pokemon height: {data['height']}")
+        # print(f"Pokemon weight: {data['weight']}")
+        # print(f"Pokemon abilities: {data['abilities']}")
     else:
         print("Pokemon not found")
 
